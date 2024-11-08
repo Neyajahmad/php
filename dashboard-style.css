@@ -1,0 +1,112 @@
+/* dashboard-style.css */
+
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 40px 0;
+}
+
+/* Dashboard Table Styling */
+.dashboard-table {
+    width: 70%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.dashboard-table:hover {
+    transform: scale(1.02);
+}
+
+.dashboard-table th, .dashboard-table td {
+    padding: 20px;
+    text-align: left;
+    font-size: 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.dashboard-table th {
+    background: #6a11cb;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.dashboard-table td {
+    background: #1f1f1f;
+    color: #fff;
+    text-align: center;
+}
+
+.dashboard-table td:hover {
+    background: #2575fc;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.dashboard-table tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Expense Summary Styling */
+.expense-summary {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: #ff4081;
+}
+
+/* Futuristic button styles */
+.add-expense-btn {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 30px;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.add-expense-btn:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .dashboard-table {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .expense-summary {
+        font-size: 1.2rem;
+    }
+
+    .add-expense-btn {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}
